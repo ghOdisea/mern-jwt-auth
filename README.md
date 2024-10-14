@@ -35,7 +35,7 @@ This is a minimal full-stack application built using the MERN stack (**MongoDB**
 2. Install dependencies:
    ```bash
    npm install
-  ```
+   ```
 
 ## Environmental Variables
 3. Create a .env file and add the following env variables:
