@@ -19,9 +19,8 @@ This is a minimal full-stack application built using the MERN stack (**MongoDB**
 - **Redux**: State management in the React application.
 
 ## Requirements
-- Node.js (v14.x or higher)
+- Node.js v20.10.0
 - MongoDB
-- Git (optional)
 
 ## Installation
 
@@ -30,4 +29,43 @@ This is a minimal full-stack application built using the MERN stack (**MongoDB**
    ```bash
    git clone https://github.com/ghOdisea/mern-jwt-auth.git
    cd mern-jwt-auth
+   ```
+
+## Backend Setup
+2. Install dependencies:
+   ```bash
+   npm install
   ```
+
+## Environmental Variables
+3. Create a .env file and add the following env variables:
+```bash
+
+NODE_ENV=development
+APP_ORIGIN=<localhost_client>
+MONGO_URI=<mongo_uri>
+JWT_SECRET=<jwtSecret>
+JWT_REFRESH_SECRET=<RefreshToken_secret>
+
+EMAIL_SENDER=g
+RESEND_API_KEY=<resend api key>
+
+```
+
+## Frontend Setup
+1. Navigate to the client directory and install dependencies:
+```bash
+cd client
+npm install
+```
+
+2. Running the App
+To run both the client and server concurrently:
+```bash
+npm run dev
+```
+
+The backend server will run on http://localhost:5000
+The frontend React app will run on http://localhost:3000
+
+
